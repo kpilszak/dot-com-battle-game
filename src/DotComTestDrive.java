@@ -8,7 +8,7 @@ public class DotComTestDrive {
         theDotCom.setLocationCells(locations);
         boolean isAlive = true;
         while (isAlive == true) {
-            Sring guess = helper.getUserInput("enter a number");
+            String guess = helper.getUserInput("enter a number");
             String result = theDotCom.checkYourself(guess);
             numOfGuesses++;
             if (result.equals("kill")) {
