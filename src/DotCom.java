@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class DotCom {
 
-    private String name;
     private ArrayList<String> locationCells;
+    private String name;
 
     public DotCom(String name){
         this.name = name;
@@ -20,6 +20,7 @@ public class DotCom {
             locationCells.remove(index);
             if (locationCells.isEmpty()) {
                 result = "kill";
+                System.out.println("Ouch! You sunk " + name + " : ( ");
             } else {
                 result = "hit";
             }
