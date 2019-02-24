@@ -2,8 +2,12 @@ import java.util.ArrayList;
 
 public class DotCom {
 
+    private String name;
     private ArrayList<String> locationCells;
-    int numOfHits = 0;
+
+    public DotCom(String name){
+        this.name = name;
+    }
 
     public void setLocationCells(ArrayList<String> loc) {
         locationCells = loc;
